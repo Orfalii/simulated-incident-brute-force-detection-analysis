@@ -32,5 +32,6 @@ O padrão indica tentativa automatizada de acesso indevido.
 ##  Evidências
 
 Os logs analisados estão disponíveis no arquivo abaixo:
-
 logs.txt
+
+Relatório completo: incident-report.md
