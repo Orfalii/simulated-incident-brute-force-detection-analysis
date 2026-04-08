@@ -59,3 +59,27 @@ O fato de o login ter sido bem-sucedido após múltiplas falhas indica compromet
 
 ## Conclusão
 Foi identificado um ataque de brute force com sucesso, resultando no comprometimento da conta "admin". Medidas imediatas devem ser tomadas para conter o incidente e evitar novos acessos não autorizados.
+
+---
+
+## Indicadores de Comprometimento (IOCs)
+
+- IP suspeito: 192.168.1.50  
+- Porta: 22 (SSH)  
+- Tipo de ataque: Brute Force  
+
+---
+
+## MITRE ATT&CK
+
+- Técnica: Brute Force  
+- ID: T1110  
+- Tática: Credential Access  
+
+---
+
+## Classificação do Incidente
+
+- Severidade: Alta  
+- Status: Confirmado  
+- Tipo: Acesso não autorizado
