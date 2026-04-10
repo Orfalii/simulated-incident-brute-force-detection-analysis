@@ -30,9 +30,10 @@ Foi identificado um ataque de brute force, com múltiplas tentativas de login se
 
 ### Mitigações
 - Bloqueio do IP no firewall  
-- Reset de credenciais  
+- Reset de credenciais 
+- Bloqueio de conta após múltiplas tentativas
 - Implementação de MFA  
-- Monitoramento contínuo  
+- Monitoramento contínuo via SIEM 
 - Investigação da origem interna  
 
 ---
