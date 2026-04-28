@@ -39,7 +39,7 @@ Serviço Exposto: `SSH / port 22`
 ---
 
 ### Fontes de Dados
-- Arquivo de log analisado: [Logs.txt](Logs.txt)
+- Arquivo de log analisado: [auth.log](auth.log)
 - Evidência visual: `evidence.png`
 - Relatório técnico completo: [incident-report.md](incident-report.md)
 
@@ -67,7 +67,7 @@ Serviço Exposto: `SSH / port 22`
 
 Os logs analisados estão disponíveis abaixo:
 
-Logs analisados: [Logs.txt](Logs.txt)
+Logs analisados: [auth.log](auth.log)
 
 ## Evidência Visual
 
