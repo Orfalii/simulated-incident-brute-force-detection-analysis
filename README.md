@@ -23,13 +23,29 @@ Identificar se a sequência de autenticações observada indica tentativa de ace
 
 ---
 
-### Impacto
-Possível comprometimento da conta "admin", com risco de acesso não autorizado ao sistema.
+### Resumo do Incidente
+Severidade: Alta
+Status: Confirmado
+MITRE ATT&CK: `T1110 - Brute Force`
+IOC Principal: `192.168.1.50`
+Conta Afetada: `admin`
+Serviço Exposto: `SSH / port 22`
 
 ---
 
-### Conclusão
-Foi identificado um ataque de brute force, com múltiplas tentativas de login seguidas de sucesso, indicando comprometimento de conta.
+### Fontes de Dados
+- Arquivo de log analisado: [Logs.txt](Logs.txt)
+- Evidência visual: `evidence.png`
+- Relatório técnico completo: [incident-report.md](incident-report.md)
+
+---
+
+### Fluxo de investigação
+1. Revisão do arquivo de autenticação para separar eventos benignos e suspeitos.
+2. Identificação de repetição de falhas para a mesma conta e mesma origem.
+3. Validação de sucesso de autenticação após tentativas consecutivas.
+4. Classificação do incidente com base em IOC, timeline, impacto e técnica MITRE.
+5. Definição de ações imediatas de contenção e fortalecimento de controle.
 
 ---
 
@@ -39,12 +55,6 @@ Foi identificado um ataque de brute force, com múltiplas tentativas de login se
 - Habilitar MFA para acessos administrativos.
 - Revisar exposição do serviço SSH e políticas de bloqueio por tentativas.
 - Correlacionar esse IOC com outras fontes de log para verificar atividade lateral.
-
----
-
-## Ferramentas utilizadas
-- Logs de autenticação  
-- Análise manual   
 
 ---
 
@@ -60,11 +70,15 @@ Logs analisados: [Logs.txt](Logs.txt)
 
 ---
 
-## Relatório Completo
+### O que foi praticado
+- leitura e interpretação de logs
+- montagem de timeline
+- triagem inicial de alertas
+- identificação de IOC
+- classificação de incidente
+- definição de contenção e mitigação
 
-O relatório detalhado da investigação está disponível abaixo:
-
-[incident-report.md](incident-report.md)
+---
 
 ## Observações
 Os logs deste repositório representam um cenário simulado para fins de estudo e prática em investigação de incidentes.
