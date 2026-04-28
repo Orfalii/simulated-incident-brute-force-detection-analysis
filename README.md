@@ -33,13 +33,12 @@ Foi identificado um ataque de brute force, com múltiplas tentativas de login se
 
 ---
 
-### Mitigações
-- Bloqueio do IP no firewall  
-- Reset de credenciais 
-- Bloqueio de conta após múltiplas tentativas
-- Implementação de MFA  
-- Monitoramento contínuo via SIEM 
-- Investigação da origem interna  
+### Ações Recomendadas
+- Bloquear ou isolar temporariamente o IP de origem no firewall.
+- Resetar a senha da conta afetada.
+- Habilitar MFA para acessos administrativos.
+- Revisar exposição do serviço SSH e políticas de bloqueio por tentativas.
+- Correlacionar esse IOC com outras fontes de log para verificar atividade lateral.
 
 ---
 
@@ -67,5 +66,5 @@ O relatório detalhado da investigação está disponível abaixo:
 
 [incident-report.md](incident-report.md)
 
-## Anotações
+## Observações
 Os logs deste repositório representam um cenário simulado para fins de estudo e prática em investigação de incidentes.
