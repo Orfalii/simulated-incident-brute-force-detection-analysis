@@ -81,5 +81,7 @@ Foi identificado um ataque de brute force com sucesso, resultando no comprometim
 ## Classificação do Incidente
 
 - Severidade: Alta  
+Justificativa: houve sucesso de autenticação após múltiplas falhas consecutivas para a conta admin via SSH, indicando provável comprometimento de credencial com potencial de acesso privilegiado.
 - Status: Confirmado  
+Justificativa: a sequência temporal, a repetição do mesmo usuário, a origem única e o sucesso subsequente suportam a hipótese de brute force com comprometimento.
 - Tipo: Acesso não autorizado
