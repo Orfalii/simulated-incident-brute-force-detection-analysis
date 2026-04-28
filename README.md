@@ -1,13 +1,17 @@
 # SOC Labs – Raphael Orfali
 
-Este repositório contém meus estudos práticos em cibersegurança, com foco em análise de incidentes e Blue Team.
+Este repositório reúne estudos práticos em cibersegurança com foco em Blue Team, análise de logs e investigação inicial de incidentes.
 
 ---
 
 ## Lab 1 – Investigação de Brute Force
 
+### Cenário
+Este laboratório simula um caso de brute force contra uma conta com privilégio elevado em um servidor Linux exposto via SSH. O objetivo é analisar os eventos de autenticação, separar ruído de atividade suspeita e documentar a investigação como um caso de triagem inicial em SOC.
+
+
 ### Objetivo
-Identificar tentativas de acesso não autorizado através da análise de logs.
+Identificar se a sequência de autenticações observada indica tentativa de acesso não autorizado e justificar a classificação do incidente com base nos logs disponíveis.
 
 ---
 
@@ -61,3 +65,6 @@ Logs analisados: [Logs.txt](Logs.txt)
 O relatório detalhado da investigação está disponível abaixo:
 
 [incident-report.md](incident-report.md)
+
+## Notes
+Os logs deste repositório representam um cenário simulado para fins de estudo e prática em investigação de incidentes.
