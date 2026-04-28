@@ -15,8 +15,8 @@ Identificar se a sequência de autenticações observada indica tentativa de ace
 
 ---
 
-### Análise
-- Detectadas múltiplas tentativas de login falhas  
+### Principais conclusões
+- Múltiplas falhas de autenticação via SSH para a conta `admin` em curto intervalo.
 - Origem: IP 192.168.1.50 (identificado nos logs)  
 - Comportamento consistente com ataque de força bruta  
 
